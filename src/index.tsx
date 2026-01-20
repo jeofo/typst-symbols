@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import SymbolList from "./symbols";
 import { ActionPanel, Action, List } from "@raycast/api";
-import Fuse from "fuse.js";
+import Fuse, { IFuseOptions } from "fuse.js";
 
 type Item = {
   id: number;
@@ -23,7 +23,7 @@ const ITEMS: Item[] = SymbolList.map((value, index) => {
   };
 });
 
-const FuseOptions: Fuse.IFuseOptions<Item> = {
+const FuseOptions: IFuseOptions<Item> = {
   includeScore: true,
   threshold: 0.4,
   ignoreLocation: true,
