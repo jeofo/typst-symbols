@@ -1,3 +1,4 @@
-# LateX Math Symbols Changelog
+# Typst Symbols Changelog
 
-## [Initial Version] - 2022-11-13
+## [Initial Version] - Jan-2026
+
